@@ -1,0 +1,93 @@
+2020-07-12 14:28:30,964 INFO com.udacity.eCommerce.ECommerceApplicationTests [main] Starting ECommerceApplicationTests on PULKIT with PID 3632 (started by PULKIT in E:\[FULL COURSE] Java Web Developer Nanodegree v2.0.0\JWDND-PROJECTS\eCommerce-Application)
+2020-07-12 14:28:30,967 INFO com.udacity.eCommerce.ECommerceApplicationTests [main] No active profile set, falling back to default profiles: default
+2020-07-12 14:28:36,434 INFO com.udacity.eCommerce.ECommerceApplicationTests [main] Started ECommerceApplicationTests in 6.015 seconds (JVM running for 8.033)
+2020-07-12 14:28:36,810 WARN com.udacity.eCommerce.security.JwtAuthorizationAndValidateToken [main] JwtAuthorizationAndValidateToken.doFilterInternal FAILURE [Authorization Token Invalid/Not Found] 
+2020-07-12 14:28:37,136 INFO com.udacity.eCommerce.service.UserService [main] UserService.create SUCCESS [User with username Pulkit created with id 1 ]
+2020-07-12 14:28:37,314 INFO com.udacity.eCommerce.service.UserService [main] UserService.loadUserByUsername SUCCESS [User with username {} retrieved]
+2020-07-12 14:28:37,493 INFO com.udacity.eCommerce.security.JwtAuthenticationAndTokenGenerator [main] JwtAuthenticationAndTokenGenerator.successfulAuthentication SUCCESS [User Pulkit authenticated, JWT issued]
+2020-07-12 14:28:37,506 WARN com.udacity.eCommerce.security.JwtAuthorizationAndValidateToken [main] JwtAuthorizationAndValidateToken.doFilterInternal FAILURE [Authorization Token Invalid/Not Found] 
+2020-07-12 14:28:37,508 WARN com.udacity.eCommerce.controller.UserController [main] UserController.createUser FAILURE [Password criteria not fulfilled] 
+2020-07-12 14:28:37,674 WARN com.udacity.eCommerce.service.CartService [main] CartService.removeItem - FAILURE [Item with itemId 1 for User with userId 1 and username Pulkit not found] 
+2020-07-12 14:28:37,685 WARN com.udacity.eCommerce.service.CartService [main] CartService.removeItem - FAILURE [Item with itemId 10 not found] 
+2020-07-12 14:28:37,694 WARN com.udacity.eCommerce.service.CartService [main] CartService.removeItem - FAILURE [User with username UNKNOWN_USER not found] 
+2020-07-12 14:28:37,715 WARN com.udacity.eCommerce.service.UserService [main] UserService.findUserByUsername - FAILURE [User with username Ankita not found] 
+2020-07-12 14:28:37,763 INFO com.udacity.eCommerce.service.CartService [main] CartService.addItem SUCCESS [Cart for User with userId1 has added item with item id 1 having quantity 2 
+2020-07-12 14:28:37,794 INFO com.udacity.eCommerce.service.OrderService [main] OrderService.createOrder SUCCESS [Order with orderId 1 for User with username Pulkit created] 
+2020-07-12 14:28:37,821 WARN com.udacity.eCommerce.service.UserService [main] UserService.findUserById - FAILURE [User with id 2 not found] 
+2020-07-12 14:28:37,847 INFO com.udacity.eCommerce.service.CartService [main] CartService.addItem SUCCESS [Cart for User with userId1 has added item with item id 1 having quantity 2 
+2020-07-12 14:28:37,865 WARN com.udacity.eCommerce.security.JwtAuthorizationAndValidateToken [main] JwtAuthorizationAndValidateToken.doFilterInternal FAILURE [Authorization Token Invalid/Not Found] 
+2020-07-12 14:28:37,867 WARN com.udacity.eCommerce.controller.UserController [main] UserController.createUser FAILURE [Password criteria not fulfilled] 
+2020-07-12 14:28:37,890 INFO com.udacity.eCommerce.service.OrderService [main] OrderService.findOrdersByUsername SUCCESS [ fetched all orders for User with username Pulkit] 
+2020-07-12 14:28:37,908 INFO com.udacity.eCommerce.service.UserService [main] UserService.findUserByUsername SUCCESS [User retrieved with username Pulkit ]
+2020-07-12 14:28:37,926 INFO com.udacity.eCommerce.service.ItemService [main] ItemService.findItemById SUCCESS [Item with id 1 retrieved] 
+2020-07-12 14:28:37,938 WARN com.udacity.eCommerce.security.JwtAuthorizationAndValidateToken [main] JwtAuthorizationAndValidateToken.doFilterInternal FAILURE [Authorization Token Invalid/Not Found] 
+2020-07-12 14:28:37,940 WARN com.udacity.eCommerce.controller.UserController [main] UserController.createUser FAILURE [Password criteria not fulfilled] 
+2020-07-12 14:28:37,959 WARN com.udacity.eCommerce.service.CartService [main] CartService.addItem - FAILURE [Item with itemId 10 not found] 
+2020-07-12 14:28:37,992 INFO com.udacity.eCommerce.service.CartService [main] CartService.removeItem SUCCESS [Cart for User with userId1 has removed item with item id 1 and now has quantity 4 
+2020-07-12 14:28:38,030 INFO com.udacity.eCommerce.service.ItemService [main] ItemService.findItemById SUCCESS [Items with name Triangle Widget retrieved] 
+2020-07-12 14:28:38,031 WARN com.udacity.eCommerce.service.ItemService [main] ItemService.findItemByName - FAILURE [Item with name Triangle Widget not found] 
+2020-07-12 14:28:38,049 INFO com.udacity.eCommerce.service.ItemService [main] ItemService.getAll SUCCESS [All items retrieved]
+2020-07-12 14:28:38,063 WARN com.udacity.eCommerce.service.ItemService [main] ItemService.findItemById - FAILURE [Item with itemId 9 not found] 
+2020-07-12 14:28:38,077 INFO com.udacity.eCommerce.service.UserService [main] UserService.findUserById SUCCESS [User retrieved with id 1 ]
+2020-07-12 14:29:36,072 INFO com.udacity.eCommerce.ECommerceApplicationTests [main] Starting ECommerceApplicationTests on PULKIT with PID 22044 (started by PULKIT in E:\[FULL COURSE] Java Web Developer Nanodegree v2.0.0\JWDND-PROJECTS\eCommerce-Application)
+2020-07-12 14:29:36,077 INFO com.udacity.eCommerce.ECommerceApplicationTests [main] No active profile set, falling back to default profiles: default
+2020-07-12 14:29:40,963 INFO com.udacity.eCommerce.ECommerceApplicationTests [main] Started ECommerceApplicationTests in 5.345 seconds (JVM running for 7.055)
+2020-07-12 14:29:41,345 WARN com.udacity.eCommerce.security.JwtAuthorizationAndValidateToken [main] JwtAuthorizationAndValidateToken.doFilterInternal FAILURE [Authorization Token Invalid/Not Found] 
+2020-07-12 14:29:41,756 INFO com.udacity.eCommerce.service.UserService [main] UserService.create SUCCESS [User with username Pulkit created with id 1 ]
+2020-07-12 14:29:41,921 INFO com.udacity.eCommerce.service.UserService [main] UserService.loadUserByUsername SUCCESS [User with username {} retrieved]
+2020-07-12 14:29:42,043 INFO com.udacity.eCommerce.security.JwtAuthenticationAndTokenGenerator [main] JwtAuthenticationAndTokenGenerator.successfulAuthentication SUCCESS [User Pulkit authenticated, JWT issued]
+2020-07-12 14:29:42,048 WARN com.udacity.eCommerce.security.JwtAuthorizationAndValidateToken [main] JwtAuthorizationAndValidateToken.doFilterInternal FAILURE [Authorization Token Invalid/Not Found] 
+2020-07-12 14:29:42,049 WARN com.udacity.eCommerce.controller.UserController [main] UserController.createUser FAILURE [Password criteria not fulfilled] 
+2020-07-12 14:29:42,143 WARN com.udacity.eCommerce.service.CartService [main] CartService.removeItem - FAILURE [Item with itemId 1 for User with userId 1 and username Pulkit not found] 
+2020-07-12 14:29:42,156 WARN com.udacity.eCommerce.service.CartService [main] CartService.removeItem - FAILURE [Item with itemId 10 not found] 
+2020-07-12 14:29:42,165 WARN com.udacity.eCommerce.service.CartService [main] CartService.removeItem - FAILURE [User with username UNKNOWN_USER not found] 
+2020-07-12 14:29:42,184 WARN com.udacity.eCommerce.service.UserService [main] UserService.findUserByUsername - FAILURE [User with username Ankita not found] 
+2020-07-12 14:29:42,234 INFO com.udacity.eCommerce.service.CartService [main] CartService.addItem SUCCESS [Cart for User with userId1 has added item with item id 1 having quantity 2 
+2020-07-12 14:29:42,263 INFO com.udacity.eCommerce.service.OrderService [main] OrderService.createOrder SUCCESS [Order with orderId 1 for User with username Pulkit created] 
+2020-07-12 14:29:42,290 WARN com.udacity.eCommerce.service.UserService [main] UserService.findUserById - FAILURE [User with id 2 not found] 
+2020-07-12 14:29:42,316 INFO com.udacity.eCommerce.service.CartService [main] CartService.addItem SUCCESS [Cart for User with userId1 has added item with item id 1 having quantity 2 
+2020-07-12 14:29:42,328 WARN com.udacity.eCommerce.security.JwtAuthorizationAndValidateToken [main] JwtAuthorizationAndValidateToken.doFilterInternal FAILURE [Authorization Token Invalid/Not Found] 
+2020-07-12 14:29:42,329 WARN com.udacity.eCommerce.controller.UserController [main] UserController.createUser FAILURE [Password criteria not fulfilled] 
+2020-07-12 14:29:42,353 INFO com.udacity.eCommerce.service.OrderService [main] OrderService.findOrdersByUsername SUCCESS [ fetched all orders for User with username Pulkit] 
+2020-07-12 14:29:42,369 INFO com.udacity.eCommerce.service.UserService [main] UserService.findUserByUsername SUCCESS [User retrieved with username Pulkit ]
+2020-07-12 14:29:42,386 INFO com.udacity.eCommerce.service.ItemService [main] ItemService.findItemById SUCCESS [Item with id 1 retrieved] 
+2020-07-12 14:29:42,402 WARN com.udacity.eCommerce.security.JwtAuthorizationAndValidateToken [main] JwtAuthorizationAndValidateToken.doFilterInternal FAILURE [Authorization Token Invalid/Not Found] 
+2020-07-12 14:29:42,403 WARN com.udacity.eCommerce.controller.UserController [main] UserController.createUser FAILURE [Password criteria not fulfilled] 
+2020-07-12 14:29:42,420 WARN com.udacity.eCommerce.service.CartService [main] CartService.addItem - FAILURE [Item with itemId 10 not found] 
+2020-07-12 14:29:42,443 INFO com.udacity.eCommerce.service.CartService [main] CartService.removeItem SUCCESS [Cart for User with userId1 has removed item with item id 1 and now has quantity 4 
+2020-07-12 14:29:42,479 INFO com.udacity.eCommerce.service.ItemService [main] ItemService.findItemById SUCCESS [Items with name Triangle Widget retrieved] 
+2020-07-12 14:29:42,479 WARN com.udacity.eCommerce.service.ItemService [main] ItemService.findItemByName - FAILURE [Item with name Triangle Widget not found] 
+2020-07-12 14:29:42,496 INFO com.udacity.eCommerce.service.ItemService [main] ItemService.getAll SUCCESS [All items retrieved]
+2020-07-12 14:29:42,517 WARN com.udacity.eCommerce.service.ItemService [main] ItemService.findItemById - FAILURE [Item with itemId 9 not found] 
+2020-07-12 14:29:42,532 INFO com.udacity.eCommerce.service.UserService [main] UserService.findUserById SUCCESS [User retrieved with id 1 ]
+2020-07-12 14:29:47,301 INFO com.udacity.eCommerce.ECommerceApplicationTests [main] Starting ECommerceApplicationTests on PULKIT with PID 31204 (started by PULKIT in E:\[FULL COURSE] Java Web Developer Nanodegree v2.0.0\JWDND-PROJECTS\eCommerce-Application)
+2020-07-12 14:29:47,304 INFO com.udacity.eCommerce.ECommerceApplicationTests [main] No active profile set, falling back to default profiles: default
+2020-07-12 14:29:52,522 INFO com.udacity.eCommerce.ECommerceApplicationTests [main] Started ECommerceApplicationTests in 5.553 seconds (JVM running for 7.052)
+2020-07-12 14:29:53,001 WARN com.udacity.eCommerce.security.JwtAuthorizationAndValidateToken [main] JwtAuthorizationAndValidateToken.doFilterInternal FAILURE [Authorization Token Invalid/Not Found] 
+2020-07-12 14:29:53,446 INFO com.udacity.eCommerce.service.UserService [main] UserService.create SUCCESS [User with username Pulkit created with id 1 ]
+2020-07-12 14:29:53,661 INFO com.udacity.eCommerce.service.UserService [main] UserService.loadUserByUsername SUCCESS [User with username {} retrieved]
+2020-07-12 14:29:53,808 INFO com.udacity.eCommerce.security.JwtAuthenticationAndTokenGenerator [main] JwtAuthenticationAndTokenGenerator.successfulAuthentication SUCCESS [User Pulkit authenticated, JWT issued]
+2020-07-12 14:29:53,814 WARN com.udacity.eCommerce.security.JwtAuthorizationAndValidateToken [main] JwtAuthorizationAndValidateToken.doFilterInternal FAILURE [Authorization Token Invalid/Not Found] 
+2020-07-12 14:29:53,815 WARN com.udacity.eCommerce.controller.UserController [main] UserController.createUser FAILURE [Password criteria not fulfilled] 
+2020-07-12 14:29:53,974 WARN com.udacity.eCommerce.service.CartService [main] CartService.removeItem - FAILURE [Item with itemId 1 for User with userId 1 and username Pulkit not found] 
+2020-07-12 14:29:53,992 WARN com.udacity.eCommerce.service.CartService [main] CartService.removeItem - FAILURE [Item with itemId 10 not found] 
+2020-07-12 14:29:54,001 WARN com.udacity.eCommerce.service.CartService [main] CartService.removeItem - FAILURE [User with username UNKNOWN_USER not found] 
+2020-07-12 14:29:54,025 WARN com.udacity.eCommerce.service.UserService [main] UserService.findUserByUsername - FAILURE [User with username Ankita not found] 
+2020-07-12 14:29:54,086 INFO com.udacity.eCommerce.service.CartService [main] CartService.addItem SUCCESS [Cart for User with userId1 has added item with item id 1 having quantity 2 
+2020-07-12 14:29:54,125 INFO com.udacity.eCommerce.service.OrderService [main] OrderService.createOrder SUCCESS [Order with orderId 1 for User with username Pulkit created] 
+2020-07-12 14:29:54,162 WARN com.udacity.eCommerce.service.UserService [main] UserService.findUserById - FAILURE [User with id 2 not found] 
+2020-07-12 14:29:54,190 INFO com.udacity.eCommerce.service.CartService [main] CartService.addItem SUCCESS [Cart for User with userId1 has added item with item id 1 having quantity 2 
+2020-07-12 14:29:54,204 WARN com.udacity.eCommerce.security.JwtAuthorizationAndValidateToken [main] JwtAuthorizationAndValidateToken.doFilterInternal FAILURE [Authorization Token Invalid/Not Found] 
+2020-07-12 14:29:54,206 WARN com.udacity.eCommerce.controller.UserController [main] UserController.createUser FAILURE [Password criteria not fulfilled] 
+2020-07-12 14:29:54,230 INFO com.udacity.eCommerce.service.OrderService [main] OrderService.findOrdersByUsername SUCCESS [ fetched all orders for User with username Pulkit] 
+2020-07-12 14:29:54,249 INFO com.udacity.eCommerce.service.UserService [main] UserService.findUserByUsername SUCCESS [User retrieved with username Pulkit ]
+2020-07-12 14:29:54,267 INFO com.udacity.eCommerce.service.ItemService [main] ItemService.findItemById SUCCESS [Item with id 1 retrieved] 
+2020-07-12 14:29:54,279 WARN com.udacity.eCommerce.security.JwtAuthorizationAndValidateToken [main] JwtAuthorizationAndValidateToken.doFilterInternal FAILURE [Authorization Token Invalid/Not Found] 
+2020-07-12 14:29:54,281 WARN com.udacity.eCommerce.controller.UserController [main] UserController.createUser FAILURE [Password criteria not fulfilled] 
+2020-07-12 14:29:54,300 WARN com.udacity.eCommerce.service.CartService [main] CartService.addItem - FAILURE [Item with itemId 10 not found] 
+2020-07-12 14:29:54,334 INFO com.udacity.eCommerce.service.CartService [main] CartService.removeItem SUCCESS [Cart for User with userId1 has removed item with item id 1 and now has quantity 4 
+2020-07-12 14:29:54,391 INFO com.udacity.eCommerce.service.ItemService [main] ItemService.findItemById SUCCESS [Items with name Triangle Widget retrieved] 
+2020-07-12 14:29:54,391 WARN com.udacity.eCommerce.service.ItemService [main] ItemService.findItemByName - FAILURE [Item with name Triangle Widget not found] 
+2020-07-12 14:29:54,413 INFO com.udacity.eCommerce.service.ItemService [main] ItemService.getAll SUCCESS [All items retrieved]
+2020-07-12 14:29:54,431 WARN com.udacity.eCommerce.service.ItemService [main] ItemService.findItemById - FAILURE [Item with itemId 9 not found] 
+2020-07-12 14:29:54,449 INFO com.udacity.eCommerce.service.UserService [main] UserService.findUserById SUCCESS [User retrieved with id 1 ]
