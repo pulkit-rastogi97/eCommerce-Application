@@ -1,0 +1,151 @@
+Started by user pulkit
+Running as SYSTEM
+Building in workspace C:\Users\PULKIT\.jenkins\workspace\ecommerce-application-build
+No credentials specified
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/pulkit-rastogi97/eCommerce-Application # timeout=10
+Fetching upstream changes from https://github.com/pulkit-rastogi97/eCommerce-Application
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --force --progress -- https://github.com/pulkit-rastogi97/eCommerce-Application +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 2dcb4158dc33277e4eebae212efa291dff4be0c2 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 2dcb4158dc33277e4eebae212efa291dff4be0c2 # timeout=10
+Commit message: "trying to resolve jenkins build issue"
+ > git.exe rev-list --no-walk 2dcb4158dc33277e4eebae212efa291dff4be0c2 # timeout=10
+[ecommerce-application-build] $ cmd.exe /C "mvn clean package && exit %%ERRORLEVEL%%"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.udacity:eCommerce >------------------------
+[INFO] Building eCommerce 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ eCommerce ---
+[INFO] Deleting C:\Users\PULKIT\.jenkins\workspace\ecommerce-application-build\target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ eCommerce ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ eCommerce ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 33 source files to C:\Users\PULKIT\.jenkins\workspace\ecommerce-application-build\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ eCommerce ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ eCommerce ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\Users\PULKIT\.jenkins\workspace\ecommerce-application-build\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ eCommerce ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.udacity.eCommerce.ECommerceApplicationTests
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/C:/Users/PULKIT/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/C:/Users/PULKIT/.m2/repository/org/slf4j/slf4j-log4j12/1.7.25/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+09:02:23,740 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+09:02:23,741 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+09:02:23,741 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/C:/Users/PULKIT/.jenkins/workspace/ecommerce-application-build/target/classes/logback.xml]
+09:02:23,954 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+09:02:23,963 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@6392827e - Adding [jar:file:/C:/Users/PULKIT/.m2/repository/org/springframework/boot/spring-boot/2.3.1.RELEASE/spring-boot-2.3.1.RELEASE.jar!/org/springframework/boot/logging/logback/defaults.xml] to configuration watch list.
+09:02:23,963 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@2ed2d9cb - URL [jar:file:/C:/Users/PULKIT/.m2/repository/org/springframework/boot/spring-boot/2.3.1.RELEASE/spring-boot-2.3.1.RELEASE.jar!/org/springframework/boot/logging/logback/defaults.xml] is not of type file
+09:02:24,011 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word clr with class [org.springframework.boot.logging.logback.ColorConverter]
+09:02:24,011 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wex with class [org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter]
+09:02:24,011 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wEx with class [org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter]
+09:02:24,045 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.catalina.startup.DigesterFactory] to ERROR
+09:02:24,045 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.catalina.util.LifecycleBase] to ERROR
+09:02:24,045 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.coyote.http11.Http11NioProtocol] to WARN
+09:02:24,045 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.sshd.common.util.SecurityUtils] to WARN
+09:02:24,045 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.tomcat.util.net.NioSelectorPool] to WARN
+09:02:24,045 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.eclipse.jetty.util.component.AbstractLifeCycle] to ERROR
+09:02:24,045 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.hibernate.validator.internal.util.Version] to WARN
+09:02:24,046 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework.boot.actuate.endpoint.jmx] to WARN
+09:02:24,051 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@5:35 - no applicable action for [springProfile], current ElementPath  is [[configuration][springProfile]]
+09:02:24,052 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@6:92 - no applicable action for [include], current ElementPath  is [[configuration][springProfile][include]]
+09:02:24,052 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@9:35 - no applicable action for [springProfile], current ElementPath  is [[configuration][springProfile]]
+09:02:24,052 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@10:95 - no applicable action for [appender], current ElementPath  is [[configuration][springProfile][appender]]
+09:02:24,052 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@11:19 - no applicable action for [file], current ElementPath  is [[configuration][springProfile][appender][file]]
+09:02:24,052 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@13:94 - no applicable action for [rollingPolicy], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy]]
+09:02:24,052 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@14:34 - no applicable action for [fileNamePattern], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][fileNamePattern]]
+09:02:24,052 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@16:30 - no applicable action for [maxFileSize], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][maxFileSize]]
+09:02:24,052 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@18:31 - no applicable action for [totalSizeCap], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][totalSizeCap]]
+09:02:24,052 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@20:29 - no applicable action for [maxHistory], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][maxHistory]]
+09:02:24,052 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@23:22 - no applicable action for [encoder], current ElementPath  is [[configuration][springProfile][appender][encoder]]
+09:02:24,052 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@24:26 - no applicable action for [pattern], current ElementPath  is [[configuration][springProfile][appender][encoder][pattern]]
+09:02:24,053 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@28:59 - no applicable action for [logger], current ElementPath  is [[configuration][springProfile][logger]]
+09:02:24,053 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@29:60 - no applicable action for [logger], current ElementPath  is [[configuration][springProfile][logger]]
+09:02:24,053 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@30:29 - no applicable action for [root], current ElementPath  is [[configuration][springProfile][root]]
+09:02:24,053 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@31:47 - no applicable action for [appender-ref], current ElementPath  is [[configuration][springProfile][root][appender-ref]]
+09:02:24,053 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@32:42 - no applicable action for [appender-ref], current ElementPath  is [[configuration][springProfile][root][appender-ref]]
+09:02:24,053 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+09:02:24,054 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@d5b810e - Registering current configuration as safe fallback point
+
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+2020-07-13 09:02:27.389  INFO 12156 --- [           main] c.u.eCommerce.ECommerceApplicationTests  : Starting ECommerceApplicationTests on PULKIT with PID 12156 (started by PULKIT in C:\Users\PULKIT\.jenkins\workspace\ecommerce-application-build)
+2020-07-13 09:02:27.394  INFO 12156 --- [           main] c.u.eCommerce.ECommerceApplicationTests  : No active profile set, falling back to default profiles: default
+2020-07-13 09:02:37.269  INFO 12156 --- [           main] c.u.eCommerce.ECommerceApplicationTests  : Started ECommerceApplicationTests in 11.83 seconds (JVM running for 15.968)
+2020-07-13 09:02:37.662  WARN 12156 --- [           main] c.u.e.s.JwtAuthorizationAndValidateToken : JwtAuthorizationAndValidateToken.doFilterInternal FAILURE [Authorization Token Invalid/Not Found] 
+2020-07-13 09:02:38.271  INFO 12156 --- [           main] c.udacity.eCommerce.service.UserService  : UserService.create SUCCESS [User with username Pulkit created with id 1 ]
+2020-07-13 09:02:38.479  INFO 12156 --- [           main] c.udacity.eCommerce.service.UserService  : UserService.loadUserByUsername SUCCESS [User with username {} retrieved]
+2020-07-13 09:02:38.629  INFO 12156 --- [           main] u.e.s.JwtAuthenticationAndTokenGenerator : JwtAuthenticationAndTokenGenerator.successfulAuthentication SUCCESS [User Pulkit authenticated, JWT issued]
+2020-07-13 09:02:38.641  WARN 12156 --- [           main] c.u.e.s.JwtAuthorizationAndValidateToken : JwtAuthorizationAndValidateToken.doFilterInternal FAILURE [Authorization Token Invalid/Not Found] 
+2020-07-13 09:02:38.644  WARN 12156 --- [           main] c.u.eCommerce.controller.UserController  : UserController.createUser FAILURE [Password criteria not fulfilled] 
+2020-07-13 09:02:38.724  WARN 12156 --- [           main] c.udacity.eCommerce.service.CartService  : CartService.removeItem - FAILURE [Item with itemId 1 for User with userId 1 and username Pulkit not found] 
+2020-07-13 09:02:38.730  WARN 12156 --- [           main] c.udacity.eCommerce.service.CartService  : CartService.removeItem - FAILURE [Item with itemId 10 not found] 
+2020-07-13 09:02:38.735  WARN 12156 --- [           main] c.udacity.eCommerce.service.CartService  : CartService.removeItem - FAILURE [User with username UNKNOWN_USER not found] 
+2020-07-13 09:02:38.747  WARN 12156 --- [           main] c.udacity.eCommerce.service.UserService  : UserService.findUserByUsername - FAILURE [User with username Ankita not found] 
+2020-07-13 09:02:38.777  INFO 12156 --- [           main] c.udacity.eCommerce.service.CartService  : CartService.addItem SUCCESS [Cart for User with userId1 has added item with item id 1 having quantity 2 
+2020-07-13 09:02:38.796  INFO 12156 --- [           main] c.u.eCommerce.service.OrderService       : OrderService.createOrder SUCCESS [Order with orderId 1 for User with username Pulkit created] 
+2020-07-13 09:02:38.813  WARN 12156 --- [           main] c.udacity.eCommerce.service.UserService  : UserService.findUserById - FAILURE [User with id 2 not found] 
+2020-07-13 09:02:38.828  INFO 12156 --- [           main] c.udacity.eCommerce.service.CartService  : CartService.addItem SUCCESS [Cart for User with userId1 has added item with item id 1 having quantity 2 
+2020-07-13 09:02:38.837  WARN 12156 --- [           main] c.u.e.s.JwtAuthorizationAndValidateToken : JwtAuthorizationAndValidateToken.doFilterInternal FAILURE [Authorization Token Invalid/Not Found] 
+2020-07-13 09:02:38.838  WARN 12156 --- [           main] c.u.eCommerce.controller.UserController  : UserController.createUser FAILURE [Password criteria not fulfilled] 
+2020-07-13 09:02:38.855  INFO 12156 --- [           main] c.u.eCommerce.service.OrderService       : OrderService.findOrdersByUsername SUCCESS [ fetched all orders for User with username Pulkit] 
+2020-07-13 09:02:38.869  INFO 12156 --- [           main] c.udacity.eCommerce.service.UserService  : UserService.findUserByUsername SUCCESS [User retrieved with username Pulkit ]
+2020-07-13 09:02:38.882  INFO 12156 --- [           main] c.udacity.eCommerce.service.ItemService  : ItemService.findItemById SUCCESS [Item with id 1 retrieved] 
+2020-07-13 09:02:38.892  WARN 12156 --- [           main] c.u.e.s.JwtAuthorizationAndValidateToken : JwtAuthorizationAndValidateToken.doFilterInternal FAILURE [Authorization Token Invalid/Not Found] 
+2020-07-13 09:02:38.893  WARN 12156 --- [           main] c.u.eCommerce.controller.UserController  : UserController.createUser FAILURE [Password criteria not fulfilled] 
+2020-07-13 09:02:38.905  WARN 12156 --- [           main] c.udacity.eCommerce.service.CartService  : CartService.addItem - FAILURE [Item with itemId 10 not found] 
+2020-07-13 09:02:38.926  INFO 12156 --- [           main] c.udacity.eCommerce.service.CartService  : CartService.removeItem SUCCESS [Cart for User with userId1 has removed item with item id 1 and now has quantity 4 
+2020-07-13 09:02:38.957  INFO 12156 --- [           main] c.udacity.eCommerce.service.ItemService  : ItemService.findItemById SUCCESS [Items with name Triangle Widget retrieved] 
+2020-07-13 09:02:38.998  WARN 12156 --- [           main] c.udacity.eCommerce.service.ItemService  : ItemService.findItemByName - FAILURE [Item with name Triangle Widget not found] 
+2020-07-13 09:02:39.017  INFO 12156 --- [           main] c.udacity.eCommerce.service.ItemService  : ItemService.getAll SUCCESS [All items retrieved]
+2020-07-13 09:02:39.030  WARN 12156 --- [           main] c.udacity.eCommerce.service.ItemService  : ItemService.findItemById - FAILURE [Item with itemId 9 not found] 
+2020-07-13 09:02:39.040  INFO 12156 --- [           main] c.udacity.eCommerce.service.UserService  : UserService.findUserById SUCCESS [User retrieved with id 1 ]
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.702 s - in com.udacity.eCommerce.ECommerceApplicationTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ eCommerce ---
+[INFO] Building jar: C:\Users\PULKIT\.jenkins\workspace\ecommerce-application-build\target\eCommerce-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.3.1.RELEASE:repackage (repackage) @ eCommerce ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  46.122 s
+[INFO] Finished at: 2020-07-13T09:02:46+05:30
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS

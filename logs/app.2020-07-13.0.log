@@ -1,0 +1,62 @@
+2020-07-13 14:39:26,127 INFO com.udacity.eCommerce.ECommerceApplicationTests [main] Starting ECommerceApplicationTests on PULKIT with PID 12332 (started by PULKIT in E:\[FULL COURSE] Java Web Developer Nanodegree v2.0.0\JWDND-PROJECTS\eCommerce-Application)
+2020-07-13 14:39:26,130 INFO com.udacity.eCommerce.ECommerceApplicationTests [main] No active profile set, falling back to default profiles: default
+2020-07-13 14:39:30,169 INFO com.udacity.eCommerce.ECommerceApplicationTests [main] Started ECommerceApplicationTests in 4.34 seconds (JVM running for 5.847)
+2020-07-13 14:39:30,508 WARN com.udacity.eCommerce.security.JwtAuthorizationAndValidateToken [main] JwtAuthorizationAndValidateToken.doFilterInternal FAILURE [Authorization Token Invalid/Not Found] 
+2020-07-13 14:39:30,827 INFO com.udacity.eCommerce.service.UserService [main] UserService.create SUCCESS [User with username Pulkit created with id 1 ]
+2020-07-13 14:39:30,977 INFO com.udacity.eCommerce.service.UserService [main] UserService.loadUserByUsername SUCCESS [User with username {} retrieved]
+2020-07-13 14:39:31,097 INFO com.udacity.eCommerce.security.JwtAuthenticationAndTokenGenerator [main] JwtAuthenticationAndTokenGenerator.successfulAuthentication SUCCESS [User Pulkit authenticated, JWT issued]
+2020-07-13 14:39:31,101 WARN com.udacity.eCommerce.security.JwtAuthorizationAndValidateToken [main] JwtAuthorizationAndValidateToken.doFilterInternal FAILURE [Authorization Token Invalid/Not Found] 
+2020-07-13 14:39:31,102 WARN com.udacity.eCommerce.controller.UserController [main] UserController.createUser FAILURE [Password criteria not fulfilled] 
+2020-07-13 14:39:31,177 WARN com.udacity.eCommerce.service.CartService [main] CartService.removeItem - FAILURE [Item with itemId 1 for User with userId 1 and username Pulkit not found] 
+2020-07-13 14:39:31,190 WARN com.udacity.eCommerce.service.CartService [main] CartService.removeItem - FAILURE [Item with itemId 10 not found] 
+2020-07-13 14:39:31,200 WARN com.udacity.eCommerce.service.CartService [main] CartService.removeItem - FAILURE [User with username UNKNOWN_USER not found] 
+2020-07-13 14:39:31,214 WARN com.udacity.eCommerce.service.UserService [main] UserService.findUserByUsername - FAILURE [User with username Ankita not found] 
+2020-07-13 14:39:31,253 INFO com.udacity.eCommerce.service.CartService [main] CartService.addItem SUCCESS [Cart for User with userId1 has added item with item id 1 having quantity 2 
+2020-07-13 14:39:31,278 INFO com.udacity.eCommerce.service.OrderService [main] OrderService.createOrder SUCCESS [Order with orderId 1 for User with username Pulkit created] 
+2020-07-13 14:39:31,301 WARN com.udacity.eCommerce.service.UserService [main] UserService.findUserById - FAILURE [User with id 2 not found] 
+2020-07-13 14:39:31,318 INFO com.udacity.eCommerce.service.CartService [main] CartService.addItem SUCCESS [Cart for User with userId1 has added item with item id 1 having quantity 2 
+2020-07-13 14:39:31,328 WARN com.udacity.eCommerce.security.JwtAuthorizationAndValidateToken [main] JwtAuthorizationAndValidateToken.doFilterInternal FAILURE [Authorization Token Invalid/Not Found] 
+2020-07-13 14:39:31,329 WARN com.udacity.eCommerce.controller.UserController [main] UserController.createUser FAILURE [Password criteria not fulfilled] 
+2020-07-13 14:39:31,341 INFO com.udacity.eCommerce.service.OrderService [main] OrderService.findOrdersByUsername SUCCESS [ fetched all orders for User with username Pulkit] 
+2020-07-13 14:39:31,355 INFO com.udacity.eCommerce.service.UserService [main] UserService.findUserByUsername SUCCESS [User retrieved with username Pulkit ]
+2020-07-13 14:39:31,366 INFO com.udacity.eCommerce.service.ItemService [main] ItemService.findItemById SUCCESS [Item with id 1 retrieved] 
+2020-07-13 14:39:31,374 WARN com.udacity.eCommerce.security.JwtAuthorizationAndValidateToken [main] JwtAuthorizationAndValidateToken.doFilterInternal FAILURE [Authorization Token Invalid/Not Found] 
+2020-07-13 14:39:31,375 WARN com.udacity.eCommerce.controller.UserController [main] UserController.createUser FAILURE [Password criteria not fulfilled] 
+2020-07-13 14:39:31,385 WARN com.udacity.eCommerce.service.CartService [main] CartService.addItem - FAILURE [Item with itemId 10 not found] 
+2020-07-13 14:39:31,402 INFO com.udacity.eCommerce.service.CartService [main] CartService.removeItem SUCCESS [Cart for User with userId1 has removed item with item id 1 and now has quantity 4 
+2020-07-13 14:39:31,430 INFO com.udacity.eCommerce.service.ItemService [main] ItemService.findItemById SUCCESS [Items with name Triangle Widget retrieved] 
+2020-07-13 14:39:31,431 WARN com.udacity.eCommerce.service.ItemService [main] ItemService.findItemByName - FAILURE [Item with name Triangle Widget not found] 
+2020-07-13 14:39:31,445 INFO com.udacity.eCommerce.service.ItemService [main] ItemService.getAll SUCCESS [All items retrieved]
+2020-07-13 14:39:31,455 WARN com.udacity.eCommerce.service.ItemService [main] ItemService.findItemById - FAILURE [Item with itemId 9 not found] 
+2020-07-13 14:39:31,468 INFO com.udacity.eCommerce.service.UserService [main] UserService.findUserById SUCCESS [User retrieved with id 1 ]
+2020-07-13 14:45:09,941 INFO com.udacity.eCommerce.ECommerceApplication [main] Starting ECommerceApplication on PULKIT with PID 11400 (E:\[FULL COURSE] Java Web Developer Nanodegree v2.0.0\JWDND-PROJECTS\eCommerce-Application\target\classes started by PULKIT in E:\[FULL COURSE] Java Web Developer Nanodegree v2.0.0\JWDND-PROJECTS\eCommerce-Application)
+2020-07-13 14:45:09,960 INFO com.udacity.eCommerce.ECommerceApplication [main] No active profile set, falling back to default profiles: default
+2020-07-13 14:45:16,714 INFO com.udacity.eCommerce.ECommerceApplication [main] Started ECommerceApplication in 8.112 seconds (JVM running for 9.555)
+2020-07-13 14:45:45,287 WARN com.udacity.eCommerce.security.JwtAuthorizationAndValidateToken [http-nio-8086-exec-2] JwtAuthorizationAndValidateToken.doFilterInternal FAILURE [Authorization Token Invalid/Not Found] 
+2020-07-13 14:45:45,845 INFO com.udacity.eCommerce.service.UserService [http-nio-8086-exec-2] UserService.create SUCCESS [User with username pulkit created with id 1 ]
+2020-07-13 14:45:52,923 WARN com.udacity.eCommerce.security.JwtAuthorizationAndValidateToken [http-nio-8086-exec-3] JwtAuthorizationAndValidateToken.doFilterInternal FAILURE [Authorization Token Invalid/Not Found] 
+2020-07-13 14:45:53,044 INFO com.udacity.eCommerce.service.UserService [http-nio-8086-exec-3] UserService.create SUCCESS [User with username Ankita created with id 2 ]
+2020-07-13 14:46:04,539 INFO com.udacity.eCommerce.service.UserService [http-nio-8086-exec-4] UserService.loadUserByUsername SUCCESS [User with username {} retrieved]
+2020-07-13 14:46:04,711 INFO com.udacity.eCommerce.security.JwtAuthenticationAndTokenGenerator [http-nio-8086-exec-4] JwtAuthenticationAndTokenGenerator.successfulAuthentication SUCCESS [User pulkit authenticated, JWT issued]
+2020-07-13 14:47:21,177 INFO com.udacity.eCommerce.service.ItemService [http-nio-8086-exec-7] ItemService.getAll SUCCESS [All items retrieved]
+2020-07-13 14:47:43,329 INFO com.udacity.eCommerce.service.ItemService [http-nio-8086-exec-8] ItemService.findItemById SUCCESS [Item with id 2 retrieved] 
+2020-07-13 14:49:18,636 INFO com.udacity.eCommerce.service.CartService [http-nio-8086-exec-2] CartService.addItem SUCCESS [Cart for User with userId1 has added item with item id 1 having quantity 3 
+2020-07-13 14:49:35,938 INFO com.udacity.eCommerce.service.CartService [http-nio-8086-exec-3] CartService.removeItem SUCCESS [Cart for User with userId1 has removed item with item id 1 and now has quantity 3 
+2020-07-13 14:49:49,150 INFO com.udacity.eCommerce.service.CartService [http-nio-8086-exec-4] CartService.addItem SUCCESS [Cart for User with userId1 has added item with item id 2 having quantity 2 
+2020-07-13 14:50:29,494 INFO com.udacity.eCommerce.service.OrderService [http-nio-8086-exec-5] OrderService.findOrdersByUsername SUCCESS [ fetched all orders for User with username pulkit] 
+2020-07-13 14:50:44,189 INFO com.udacity.eCommerce.service.OrderService [http-nio-8086-exec-6] OrderService.createOrder SUCCESS [Order with orderId 1 for User with username pulkit created] 
+2020-07-13 14:50:59,655 INFO com.udacity.eCommerce.service.OrderService [http-nio-8086-exec-7] OrderService.findOrdersByUsername SUCCESS [ fetched all orders for User with username pulkit] 
+2020-07-13 14:57:33,332 WARN com.udacity.eCommerce.security.JwtAuthorizationAndValidateToken [http-nio-8086-exec-10] JwtAuthorizationAndValidateToken.doFilterInternal FAILURE [Authorization Token Invalid/Not Found] 
+2020-07-13 14:57:33,337 WARN com.udacity.eCommerce.service.UserService [http-nio-8086-exec-10] UserService.create - FAILURE [User with username pulkit already exists] 
+2020-07-13 14:57:55,395 WARN com.udacity.eCommerce.security.JwtAuthorizationAndValidateToken [http-nio-8086-exec-1] JwtAuthorizationAndValidateToken.doFilterInternal FAILURE [Authorization Token Invalid/Not Found] 
+2020-07-13 14:57:55,398 WARN com.udacity.eCommerce.service.UserService [http-nio-8086-exec-1] UserService.create - FAILURE [User with username Ankita already exists] 
+2020-07-13 14:57:59,530 INFO com.udacity.eCommerce.service.UserService [http-nio-8086-exec-2] UserService.loadUserByUsername SUCCESS [User with username {} retrieved]
+2020-07-13 14:57:59,605 INFO com.udacity.eCommerce.security.JwtAuthenticationAndTokenGenerator [http-nio-8086-exec-2] JwtAuthenticationAndTokenGenerator.successfulAuthentication SUCCESS [User pulkit authenticated, JWT issued]
+2020-07-13 14:58:04,551 INFO com.udacity.eCommerce.service.ItemService [http-nio-8086-exec-3] ItemService.getAll SUCCESS [All items retrieved]
+2020-07-13 14:58:08,140 INFO com.udacity.eCommerce.service.ItemService [http-nio-8086-exec-4] ItemService.findItemById SUCCESS [Item with id 2 retrieved] 
+2020-07-13 14:58:11,430 INFO com.udacity.eCommerce.service.CartService [http-nio-8086-exec-5] CartService.addItem SUCCESS [Cart for User with userId1 has added item with item id 1 having quantity 3 
+2020-07-13 14:58:15,620 INFO com.udacity.eCommerce.service.CartService [http-nio-8086-exec-6] CartService.removeItem SUCCESS [Cart for User with userId1 has removed item with item id 1 and now has quantity 5 
+2020-07-13 14:58:19,042 INFO com.udacity.eCommerce.service.CartService [http-nio-8086-exec-7] CartService.addItem SUCCESS [Cart for User with userId1 has added item with item id 2 having quantity 2 
+2020-07-13 14:58:22,458 INFO com.udacity.eCommerce.service.OrderService [http-nio-8086-exec-8] OrderService.findOrdersByUsername SUCCESS [ fetched all orders for User with username pulkit] 
+2020-07-13 14:58:26,476 INFO com.udacity.eCommerce.service.OrderService [http-nio-8086-exec-9] OrderService.createOrder SUCCESS [Order with orderId 2 for User with username pulkit created] 
+2020-07-13 14:58:29,963 INFO com.udacity.eCommerce.service.OrderService [http-nio-8086-exec-10] OrderService.findOrdersByUsername SUCCESS [ fetched all orders for User with username pulkit] 

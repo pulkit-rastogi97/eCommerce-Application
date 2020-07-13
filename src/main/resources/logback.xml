@@ -8,10 +8,39 @@
 
     <springProfile name="default">
         <appender name="FILE-ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
-            <file>logs/app.log</file>
 
             <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-                <fileNamePattern>logs/archived/app.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+                <fileNamePattern>logs/app.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+                <!-- each archived file, size max 30MB -->
+                <maxFileSize>30MB</maxFileSize>
+                <!-- total size of all archive files, if total size > 20GB, it will delete old archived file -->
+                <totalSizeCap>20GB</totalSizeCap>
+                <!-- 60 days to keep -->
+                <maxHistory>60</maxHistory>
+            </rollingPolicy>
+
+            <encoder>
+                <pattern>%d %p %c{1.} [%t] %m%n</pattern>
+            </encoder>
+        </appender>
+
+        <logger name="org.springframework" level="ERROR"/>
+        <logger name="com.udacity.eCommerce" level="INFO"/>
+        <root level="ERROR">
+            <appender-ref ref="FILE-ROLLING"/>
+            <appender-ref ref="CONSOLE"/>
+        </root>
+    </springProfile>
+
+    <springProfile name="prod">
+        <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+    </springProfile>
+
+    <springProfile name="prod">
+        <appender name="FILE-ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+
+            <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+                <fileNamePattern>logs/app.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
                 <!-- each archived file, size max 30MB -->
                 <maxFileSize>30MB</maxFileSize>
                 <!-- total size of all archive files, if total size > 20GB, it will delete old archived file -->

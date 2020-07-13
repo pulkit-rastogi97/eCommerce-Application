@@ -1,0 +1,367 @@
+{
+	"info": {
+		"_postman_id": "a19d971d-9ed7-4740-aadc-f35d604624fa",
+		"name": "Ecommerce-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "db55135b-e6e0-4f9e-882f-55ec29faabae",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"pulkit\",\r\n  \"password\": \"Pulkit@97\",\r\n  \"confirmPassword\": \"Pulkit@97\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8086/api/user/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"api",
+						"user",
+						"create"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"disabled": true
+						},
+						{
+							"key": "Authorization",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Another User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\" : \"Ankita\",\r\n  \"password\" : \"Secret21#\",\r\n  \"confirmPassword\" : \"Secret21#\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8086/api/user/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"api",
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"pulkit\",\r\n    \"password\": \"Pulkit@97\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8086/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Items",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwdWxraXQiLCJleHAiOjE1OTU0OTU3NjR9.IaYheDDNbvfoLNoQnZZUflgRUEAh7pIp20cFHTzoudmaUjyQ1Lpsh5_XY_j9R7pmhHlMxJxc1b8NOPjPwRWnDA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8086/api/item",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"api",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Item By Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwdWxraXQiLCJleHAiOjE1OTU0OTU3NjR9.IaYheDDNbvfoLNoQnZZUflgRUEAh7pIp20cFHTzoudmaUjyQ1Lpsh5_XY_j9R7pmhHlMxJxc1b8NOPjPwRWnDA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8086/api/item/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"api",
+						"item",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add To Cart",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwdWxraXQiLCJleHAiOjE1OTU0OTU3NjR9.IaYheDDNbvfoLNoQnZZUflgRUEAh7pIp20cFHTzoudmaUjyQ1Lpsh5_XY_j9R7pmhHlMxJxc1b8NOPjPwRWnDA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"pulkit\",\r\n    \"itemId\" : 1,\r\n    \"quantity\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8086/api/cart/addToCart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"api",
+						"cart",
+						"addToCart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove From Cart",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwdWxraXQiLCJleHAiOjE1OTUyODQyMTR9.xUESj3gJ8tuvbUPQgROV_I0wTVzjHkPetQWhQhlHb7fZwCWfNGxtOu48kQHPw8NsPxU-OtyFU_prO_NuTA1uEQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"pulkit\",\r\n    \"itemId\": 1,\r\n    \"quantity\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8086/api/cart/removeFromCart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"api",
+						"cart",
+						"removeFromCart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add To Cart",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwdWxraXQiLCJleHAiOjE1OTUyODQyMTR9.xUESj3gJ8tuvbUPQgROV_I0wTVzjHkPetQWhQhlHb7fZwCWfNGxtOu48kQHPw8NsPxU-OtyFU_prO_NuTA1uEQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"pulkit\",\r\n    \"itemId\" : 2,\r\n    \"quantity\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8086/api/cart/addToCart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"api",
+						"cart",
+						"addToCart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Order History",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwdWxraXQiLCJleHAiOjE1OTU0OTU3NjR9.IaYheDDNbvfoLNoQnZZUflgRUEAh7pIp20cFHTzoudmaUjyQ1Lpsh5_XY_j9R7pmhHlMxJxc1b8NOPjPwRWnDA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8086/api/order/history/pulkit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"api",
+						"order",
+						"history",
+						"pulkit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Submit An Order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwdWxraXQiLCJleHAiOjE1OTU0OTU3NjR9.IaYheDDNbvfoLNoQnZZUflgRUEAh7pIp20cFHTzoudmaUjyQ1Lpsh5_XY_j9R7pmhHlMxJxc1b8NOPjPwRWnDA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8086/api/order/submit/pulkit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"api",
+						"order",
+						"submit",
+						"pulkit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Order History",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwdWxraXQiLCJleHAiOjE1OTUyODQyMTR9.xUESj3gJ8tuvbUPQgROV_I0wTVzjHkPetQWhQhlHb7fZwCWfNGxtOu48kQHPw8NsPxU-OtyFU_prO_NuTA1uEQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8086/api/order/history/pulkit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"api",
+						"order",
+						"history",
+						"pulkit"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
